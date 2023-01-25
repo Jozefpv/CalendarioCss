@@ -56,6 +56,7 @@ public class ItemCalendar extends GridPane implements Initializable {
 		loadMonthDays();
 		yearNumber.addListener((o, ov, nv) -> onChangeYear(o, ov, nv));
 		monthNumber.addListener((o, ov, nv) -> onChangeMonth(o, ov, nv));
+		
 
 	}
 
@@ -100,6 +101,24 @@ public class ItemCalendar extends GridPane implements Initializable {
 				break;
 			}
 		}
+		getActualDay();
+
+
+	}
+
+	private void getActualDay() {
+
+		if(getYearNumber() == LocalDate.now().getYear() && getMonthNumber() == LocalDate.now().getMonthValue()) {
+			view.getChildren().stream().filter(nodo -> nodo instanceof Label)
+			.filter(nodo -> "diaLabel".equalsIgnoreCase(nodo.getId()))
+			.map(item -> (Label) item)
+			.filter(item -> item.getText().equals(LocalDate.now().getDayOfMonth()+ ""))
+			.forEach(day -> day.getStyleClass().add("actualDay"));
+		}
+		
+			
+
+		
 	}
 
 	private Label getLabel(int fila, int col) {
@@ -117,9 +136,12 @@ public class ItemCalendar extends GridPane implements Initializable {
 
 	private void cleanLabel() {
 		view.getChildren().stream().filter(nodo -> nodo instanceof Label)
-				.filter(nodo -> "diaLabel".equalsIgnoreCase(nodo.getId()))
-				.map(item -> (Label) item)
-				.forEach(item -> item.setText(""));
+				.filter(nodo -> "diaLabel".equalsIgnoreCase(nodo.getId())).map(item -> (Label) item)
+				.forEach(item -> {
+					item.setText("");
+					item.getStyleClass().remove("actualDay");
+				});
+				
 	}
 
 	public GridPane getView() {
