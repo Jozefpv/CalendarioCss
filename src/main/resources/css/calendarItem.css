@@ -1,0 +1,26 @@
+.root {
+	-fx-background-color: white;
+	-fx-font-family: Courier New;
+	-fx-font-size: 11pt;
+}
+
+#year{
+	-fx-font-family: Arial;
+	-fx-font-size: 22pt;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+	-fx-effect: dropshadow(gaussian, black, 5, 0.5, 0, 0);
+}
+#dialabel{
+	-fx-font-style: italic;	
+}
+
+#weekday{
+	-fx-font-weight: bold;
+}
+
+#month{
+	-fx-font-size: 13pt;
+	-fx-font-weight: bold;
+	
+}

@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<fx:root fx:id="view" type="GridPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root fx:id="view" stylesheets="@../css/calendarItem.css" type="GridPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <rowConstraints>
       <RowConstraints minHeight="10.0" prefHeight="30.0" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" />
@@ -26,55 +26,55 @@
       <ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="100.0" />
    </columnConstraints>
    <children>
-      <Label fx:id="monthText" minWidth="60.0" text="enero" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" />
-      <Label fx:id="lunText" text="L" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
-      <Label fx:id="marText" text="M" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Label fx:id="mieText" text="X" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-      <Label fx:id="jueText" text="J" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-      <Label fx:id="vieText" text="V" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-      <Label fx:id="sabText" text="S" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-      <Label fx:id="domText" text="D" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+      <Label id="month" fx:id="monthText" alignment="CENTER" minWidth="100.0" text="enero" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" />
+      <Label id="weekday" fx:id="lunText" text="L" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+      <Label id="weekday" fx:id="marText" text="M" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label id="weekday" fx:id="mieText" text="X" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label id="weekday" fx:id="jueText" text="J" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Label id="weekday" fx:id="vieText" text="V" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      <Label id="weekday" fx:id="sabText" text="S" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      <Label id="weekday" fx:id="domText" style="-fx-text-fill: red;" text="D" GridPane.columnIndex="6" GridPane.rowIndex="1" />
       <Label id="dialabel" fx:id="label1" GridPane.columnIndex="0" GridPane.rowIndex="2" />
       <Label id="dialabel" fx:id="label2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <Label id="dialabel" fx:id="label3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
       <Label id="dialabel" fx:id="label4" GridPane.columnIndex="3" GridPane.rowIndex="2" />
       <Label id="dialabel" fx:id="label5" GridPane.columnIndex="4" GridPane.rowIndex="2" />
       <Label id="dialabel" fx:id="label6" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-      <Label id="dialabel" fx:id="label7" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-      <Label id="dialabel" fx:id="label8" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+      <Label id="dialabel" fx:id="label7" style="-fx-text-fill: red;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+      <Label id="dialabel" fx:id="label8" GridPane.columnIndex="0" GridPane.rowIndex="3" />
       <Label id="dialabel" fx:id="label9" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <Label id="dialabel" fx:id="label10" GridPane.columnIndex="2" GridPane.rowIndex="3" />
       <Label id="dialabel" fx:id="label11" GridPane.columnIndex="3" GridPane.rowIndex="3" />
       <Label id="dialabel" fx:id="label12" GridPane.columnIndex="4" GridPane.rowIndex="3" />
       <Label id="dialabel" fx:id="label13" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-      <Label id="dialabel" fx:id="label14" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-      <Label id="dialabel" fx:id="label15" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+      <Label id="dialabel" fx:id="label14" style="-fx-text-fill: red;" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+      <Label id="dialabel" fx:id="label15" GridPane.columnIndex="0" GridPane.rowIndex="4" />
       <Label id="dialabel" fx:id="label16" GridPane.columnIndex="1" GridPane.rowIndex="4" />
       <Label id="dialabel" fx:id="label17" GridPane.columnIndex="2" GridPane.rowIndex="4" />
       <Label id="dialabel" fx:id="label18" GridPane.columnIndex="3" GridPane.rowIndex="4" />
       <Label id="dialabel" fx:id="label19" GridPane.columnIndex="4" GridPane.rowIndex="4" />
       <Label id="dialabel" fx:id="label20" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-      <Label id="dialabel" fx:id="label21" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-      <Label id="dialabel" fx:id="label22" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+      <Label id="dialabel" fx:id="label21" style="-fx-text-fill: red;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+      <Label id="dialabel" fx:id="label22" GridPane.columnIndex="0" GridPane.rowIndex="5" />
       <Label id="dialabel" fx:id="label23" GridPane.columnIndex="1" GridPane.rowIndex="5" />
       <Label id="dialabel" fx:id="label24" GridPane.columnIndex="2" GridPane.rowIndex="5" />
       <Label id="dialabel" fx:id="label25" GridPane.columnIndex="3" GridPane.rowIndex="5" />
       <Label id="dialabel" fx:id="label26" GridPane.columnIndex="4" GridPane.rowIndex="5" />
       <Label id="dialabel" fx:id="label27" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-      <Label id="dialabel" fx:id="label28" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-      <Label id="dialabel" fx:id="label29" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+      <Label id="dialabel" fx:id="label28" style="-fx-text-fill: red;" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+      <Label id="dialabel" fx:id="label29" GridPane.columnIndex="0" GridPane.rowIndex="6" />
       <Label id="dialabel" fx:id="label30" GridPane.columnIndex="1" GridPane.rowIndex="6" />
       <Label id="dialabel" fx:id="label31" GridPane.columnIndex="2" GridPane.rowIndex="6" />
       <Label id="dialabel" fx:id="label32" GridPane.columnIndex="3" GridPane.rowIndex="6" />
       <Label id="dialabel" fx:id="label33" GridPane.columnIndex="4" GridPane.rowIndex="6" />
       <Label id="dialabel" fx:id="label34" GridPane.columnIndex="5" GridPane.rowIndex="6" />
-      <Label id="dialabel" fx:id="label35" GridPane.columnIndex="6" GridPane.rowIndex="6" />
-      <Label id="dialabel" fx:id="label36" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+      <Label id="dialabel" fx:id="label35" style="-fx-text-fill: red;" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+      <Label id="dialabel" fx:id="label36" GridPane.columnIndex="0" GridPane.rowIndex="7" />
       <Label id="dialabel" fx:id="label37" GridPane.columnIndex="1" GridPane.rowIndex="7" />
       <Label id="dialabel" fx:id="label38" GridPane.columnIndex="2" GridPane.rowIndex="7" />
       <Label id="dialabel" fx:id="label39" GridPane.columnIndex="3" GridPane.rowIndex="7" />
       <Label id="dialabel" fx:id="label40" GridPane.columnIndex="4" GridPane.rowIndex="7" />
       <Label id="dialabel" fx:id="label41" GridPane.columnIndex="5" GridPane.rowIndex="7" />
-      <Label id="dialabel" fx:id="label42" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+      <Label id="dialabel" fx:id="label42" style="-fx-text-fill: red;" GridPane.columnIndex="6" GridPane.rowIndex="7" />
    </children>
 </fx:root>
